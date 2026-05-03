@@ -48,7 +48,7 @@ function selesaiTugas(btn) {
 
   text.style.textDecoration = "line-through";
   text.style.color = "gray";
-  text.textContent = text.textContent.replace("⏳", "✔️");
+  text.textContent = text.textContent.replace("⏳",  "✔️");
 }
 
 function hapusTugas(btn) {
