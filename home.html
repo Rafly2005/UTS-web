@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do Dashboard</title>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<script src="script.js"></script>
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">To-Do List</h2>
+    <ul>
+      <li class="active" onclick="showPage('dashboard', this)">Dashboard</li>
+      <li onclick="showPage('tugas', this)">Tugas</li>
+      <li onclick="showPage('kalender', this)">Kalender</li>
+      <li onclick="showPage('pengaturan', this)">Pengaturan</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="header">
+      <h1>Selamat Datang Mahasiswa 👋</h1>
+      <div class="profile">🧑‍💻</div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="page">
+      <div class="start">
+        <div class="card blue">
+          <p>Total Tugas</p>
+          <h2>5</h2>
+        </div>
+        <div class="card yellow">
+          <p>Belum Selesai</p>
+          <h2>3</h2>
+        </div>
+        <div class="card green">
+          <p>Selesai</p>
+          <h2>2</h2>
+        </div>
+        <div class="card red">
+          <p>Deadline Dekat</p>
+          <h2>1</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- TUGAS -->
+    <div id="tugas" class="page" style="display:none;">
+      <h2>📚 Daftar Tugas</h2>
+      <div class="tugas-list">
+        <p>✔️ Tugas IMK</p>
+        <p>✔️ Tugas Web</p>
+        <p>⏳ Tugas Basis Data</p>
+      </div>
+    </div>
+
+    <!-- KALENDER -->
+    <div id="kalender" class="page" style="display:none;">
+      <h2>📅 Kalender</h2>
+      <p>Belum ada jadwal</p>
+    </div>
+
+    <!-- PENGATURAN -->
+    <div id="pengaturan" class="page" style="display:none;">
+      <h2>⚙️ Pengaturan</h2>
+      <p>Pengaturan akun & preferensi</p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
