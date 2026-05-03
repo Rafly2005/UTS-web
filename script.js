@@ -11,3 +11,22 @@ function showPage(pageId, el) {
     el.classList.add('active');
   }
 }
+
+function tambahTugas() {
+  const select = document.getElementById("course");
+  const value = select.value;
+
+  if (value === "") {
+    alert("Pilih mata kuliah dulu!");
+    return;
+  }
+
+  const list = document.querySelector(".tugas-list");
+
+  const item = document.createElement("p");
+  item.textContent = "⏳ " + value;
+
+  list.appendChild(item);
+
+  select.value = "";
+}

@@ -124,3 +124,29 @@ body {
   margin-bottom: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
+
+.form-tugas {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.form-tugas select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.form-tugas button {
+  padding: 10px 15px;
+  border: none;
+  background: #4c6ef5;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-tugas button:hover {
+  background: #364fc7;
+}
